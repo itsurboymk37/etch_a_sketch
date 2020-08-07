@@ -12,18 +12,21 @@
 
         divA = [];
         divAA = [];
-        for (j=0; j<16; j++){
-            let div=document.createElement('div');
-            div.textContent="Hello World!" + (j+1)
-            divA.push(div);
+        
+        for (i=0; i<16; i++){
+            for (j=0; j<16; j++){
+                let div=document.createElement('div');
+                div.textContent="Hello World!" + (j+1);
+                divA.push(div);
+            }
+            divAA.push(divA)
+            divA = []
         }
+        
         //I think if I combine the two for loops up here, each div
         //will be unique and then printing them all out would work...
-        for (i=0; i<16; i++){
-            divAA.push(divA);
-        }
-
-        let k=0; let l=0;
+        let k=0; 
+        let l=0;
         
         
         //I think you can only add each div to the container once
