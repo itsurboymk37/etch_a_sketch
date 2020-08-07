@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
+    <button class='btn'>Clear</button>
     <div class="container"></div>
     <script>
         const container = document.querySelector('.container');
@@ -44,7 +45,6 @@
             l=0
             k++
         }
-
     </script>
     <script>
         //script for hovering
@@ -55,7 +55,14 @@
                 console.log("hi")
                 dive.classList.toggle('active');
             });
-        })
-        
+        });
+
+        //button click clears grid
+        const btn = document.querySelector('.btn');
+        btn.addEventListener('click', ()=>{
+            hovers.forEach((dive)=>{
+                dive.classList.remove('active');
+            });
+        });
     </script>
 </body>

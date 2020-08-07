@@ -3,7 +3,7 @@
 }
 
 .normal, .end {
-    border: 2px dashed pink;
+    border: 0px dashed pink;
     padding: 22px;
     text-align: center;
 }
