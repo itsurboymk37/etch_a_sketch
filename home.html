@@ -14,6 +14,7 @@
         divAA = [];
         for (j=0; j<16; j++){
             let div=document.createElement('div');
+            div.textContent="Hello World!" + j
             divArray.push(div);
         }
 
@@ -22,5 +23,11 @@
         }
 
         console.log (divAA)
+
+        for (k=0;k<16;k++){
+            for (l=0;l<16;l++){
+                container.appendChild(divAA[k][l])
+            }
+        }
     </script>
 </body>
