@@ -5,9 +5,9 @@
 .normal, .end {
     border: 2px dashed pink;
     padding: 22px;
-    text-align: center
+    text-align: center;
 }
 
 .active {
-    color: red;
+    background-color: red;
 }
