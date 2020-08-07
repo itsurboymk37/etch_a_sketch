@@ -7,3 +7,7 @@
     padding: 22px;
     text-align: center
 }
+
+.active {
+    color: red;
+}

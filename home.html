@@ -48,11 +48,14 @@
     </script>
     <script>
         //script for hovering
-        const hovers = document.querySelectorAll('.normal');
-        hovers.forEach((d)=> {
-            d.addEventListener('mouseenter', ()=>{
-                d.classList.toggle('acive')
-            })
-        }
+        let hovers = document.querySelectorAll('.normal');
+        hovers = Array.from(hovers)
+        hovers.forEach((dive)=> {
+            dive.addEventListener('mouseenter', ()=>{
+                alert("hi")
+                dive.classList.toggle('active');
+            });
+        })
+        
     </script>
 </body>
