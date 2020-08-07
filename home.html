@@ -46,4 +46,13 @@
         }
 
     </script>
+    <script>
+        //script for hovering
+        const hovers = document.querySelectorAll('.normal');
+        hovers.forEach((d)=> {
+            d.addEventListener('mouseenter', ()=>{
+                d.classList.toggle('acive')
+            })
+        }
+    </script>
 </body>
