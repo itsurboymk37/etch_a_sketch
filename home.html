@@ -6,7 +6,21 @@
   <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
+    <div class="container"></div>
     <script>
-        
+        const container = document.querySelector('.container');
+
+        divArray = [];
+        divAA = [];
+        for (j=0; j<16; j++){
+            let div=document.createElement('div');
+            divArray.push(div);
+        }
+
+        for (i=0; i<16; i++){
+            divAA.push(divArray);
+        }
+
+        console.log (divAA)
     </script>
 </body>
