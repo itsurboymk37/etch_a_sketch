@@ -18,12 +18,13 @@
             for (j=0; j<16; j++){
                 if(j==15){
                     let div=document.createElement('div');
+                    div.setAttribute('class', 'end')
                     div.textContent="Last Div in Line!";
                     divA.push(div);
                 } else {
                     let div=document.createElement('div');
                     div.setAttribute('class', 'normal')
-                    div.textContent="Hello World!" + (j+1);
+                    div.textContent="Hello" + (j+1);
                     divA.push(div);
                 }
             }

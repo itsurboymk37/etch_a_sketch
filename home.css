@@ -1,3 +1,9 @@
 .normal {
     float: left;
 }
+
+.normal, .end {
+    border: 2px dashed pink;
+    padding: 10px;
+    text-align: center
+}
