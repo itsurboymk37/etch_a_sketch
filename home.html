@@ -10,16 +10,17 @@
     <script>
         const container = document.querySelector('.container');
 
-        divArray = [];
+        divA = [];
         divAA = [];
         for (j=0; j<16; j++){
             let div=document.createElement('div');
             div.textContent="Hello World!" + (j+1)
-            divArray.push(div);
+            divA.push(div);
         }
-
+        //I think if I combine the two for loops up here, each div
+        //will be unique and then printing them all out would work...
         for (i=0; i<16; i++){
-            divAA.push(divArray);
+            divAA.push(divA);
         }
 
         let k=0; let l=0;
